@@ -1,0 +1,34 @@
+
+<section class="my-3 bg-main-light p-4 rounded-3 mx-auto w-75">
+
+
+    <h1 class="text-center text-bg-success"> User Orders </h1>
+
+
+
+    <div class="row">
+
+    <div class="col-md-4" *ngFor="let order of data">
+
+     
+        <div class="p-4">
+
+             <h4 class="h5 text-muted"> isPaid :  {{ order.isPaid }} </h4>
+                  
+            <h2 class="h5 my-4 text-muted"> payment Method Type :  {{ order.paymentMethodType}} </h2>
+
+            <h3 class="h5 text-muted"> Total Order Price : {{ order.totalOrderPrice }} </h3>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    </div>
+
+
+
+</section>

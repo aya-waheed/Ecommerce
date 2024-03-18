@@ -1,0 +1,30 @@
+<section class="my-4">
+
+
+    <h1 class="text-center my-4 text-main"> All Brands </h1>
+
+    <div class="row g-4 justify-content-center">
+
+        <div *ngFor="let brand of brands" class="col-md-4">
+
+           <div class="border border-success rounded p-3 shadow cursor-pointer">
+
+            <img height="280" class="w-100" [src]="brand.image" [alt]="brand.name">
+
+            <h3 class="text-center text-main"> {{ brand.name }} </h3>
+
+
+
+           </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
